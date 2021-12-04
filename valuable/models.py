@@ -13,7 +13,7 @@ class User(models.Model):
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.username)
-        super(Product, self).save(*args, **kwargs)
+        super(User, self).save(*args, **kwargs)
 
     def full_name(self):
         return f"{self.first_name} {self.last_name} {self.username}"
