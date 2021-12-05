@@ -1,14 +1,14 @@
 from django.http.response import HttpResponse
 from django.shortcuts import render
 from django.views import View
-from .forms import LoginForm, RegisterForm
-from .models import User
-
+from .forms import LoginForm
+from .models import User, Product
 # Create your views here.
+
 
 class Index(View):
     def get(self, request):
-        return HttpResponse("Hello world")
+        return render(request, "valuable/index.html")
 
 class Login(View):
     def get(self, request):
@@ -28,13 +28,17 @@ class Register(View):
     pass
 
 class Home(View):
-    pass
+    def get(self, request):
+        return HttpResponse("Hello")
 
 class Profile(View):
-    pass
+    def get(self, request, slug):
+        pass
+        return HttpResponse("Hello")
 
-class Product(View):
-    pass
+class ProductList(View):
+    def get(self, request, id):
+        pass
 
 class NewProduct(View):
     pass
