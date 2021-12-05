@@ -2,6 +2,25 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,django
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,django
 
+# REACT
+
+web/node_modules
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+web/node_modules
+web/bower_components
+
+*.sublime*
+
+web/psd
+web/thumb
+web/sketch
+
+
 ### Django ###
 *.log
 *.pot
