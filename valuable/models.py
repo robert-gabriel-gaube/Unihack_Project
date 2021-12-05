@@ -19,7 +19,7 @@ class User(models.Model):
         return f"{self.first_name} {self.last_name} {self.username}"
     
     def __str__(self):
-        return self.full_name()
+        return self.last_name
 
 class Product(models.Model):
     title = models.CharField(max_length = 150)
