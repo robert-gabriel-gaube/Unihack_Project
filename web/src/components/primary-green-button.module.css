@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  position: relative;
+}
+.button {
+  color: var(--dl-color-gray-white);
+  outline: none;
+  background: linear-gradient(310deg,#094635,#519259);
+  box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%), 0 2px 4px -1px rgb(0 0 0 / 7%);
+  transition: all .15s ease-in;
+  padding-top: var(--dl-space-space-triplequarterunit);
+  border-width: 0px;
+  padding-left: var(--dl-space-space-unitandahalfunit);
+  border-radius: 1.875rem;
+  padding-right: var(--dl-space-space-unitandahalfunit);
+  padding-bottom: var(--dl-space-space-triplequarterunit);
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.rootClassName1 {
+  top: 0px;
+  left: 0px;
+  align-self: center;
+}
+
+.rootClassName3 {
+  top: -33px;
+  left: -10px;
+  position: static;
+  align-self: center;
+}
+.rootClassName4 {
+  top: 248px;
+  left: 569px;
+  position: absolute;
+  align-self: center;
+}
+.rootClassName5 {
+  top: -33px;
+  left: -10px;
+  position: static;
+  align-self: center;
+}
